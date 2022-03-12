@@ -20,10 +20,31 @@
 
 	<h1>LyricEpic's Home.</h1>
     <h3 id="hitokoto"><a href="#" id="hitokoto_text">Waiting.</a></h3>
+	
+<audio id="music" src="http://m801.music.126.net/20220312215540/f486ba74222f3fab02efdf9275204f66/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/9737910510/6abc/38e3/66cc/a547ee57058d14f965101d02f720a726.mp3" loop autoplay></audio>
+<svg t="1647092669841" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2209" width="32" height="32"><path d="M870.2 466.333333l-618.666667-373.28a53.333333 53.333333 0 0 0-80.866666 45.666667v746.56a53.206667 53.206667 0 0 0 80.886666 45.666667l618.666667-373.28a53.333333 53.333333 0 0 0 0-91.333334z" fill="#5C5C66" p-id="2210" onClick="play()" alt="user"> </path></svg>
+
+<script>
+window.onload = function(){ 
+     var audio = document.getElementById('music');
+         audio.pause();//打开页面时无音乐
+}
+function play() {
+    var audio = document.getElementById('music');
+    if (audio.paused) {
+        audio.play();
+        document.getElementById('musicImg').src="images/play.png";
+    }else{
+        audio.pause();
+        audio.currentTime = 0;//音乐从头播放
+        document.getElementById('musicImg').src="images/stop.png";
+    }
+}
+</script>
+
   <p>I'm lyricepic!I'm a junior high school student,living in PRC,ZJHZ.I like to write code in my spare time.At present, I'm the planner of MelodicStudio.</p>
   <p>I like to play phigros, minecraft, clash Royal, soul knight, Celeste and so on.Contact me on QQ:177264839.</p>
 <button onclick="window.location.href = 'https://lyricepic.1919810.com/scprojects/'">My Scratch Projects</button><button onclick="window.location.href = 'https://lyricepic.1919810.com/toolbox'">ToolBox</button>
-  <audio src="http://m701.music.126.net/20220312212119/e696c71f7e01fca0897bf41def8daf33/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/9737910510/6abc/38e3/66cc/a547ee57058d14f965101d02f720a726.mp3"  autoplay="autoplay"></audio>
 
 </body>
 </html>
