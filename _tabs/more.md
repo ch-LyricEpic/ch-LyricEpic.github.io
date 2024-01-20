@@ -10,4 +10,4 @@ order: 5
 
 放一只河马在这里监工。
 
-<i class="fa-solid fa-hippo"></i>
+<i class="fa-solid fa-hippo fa-bounce fa-sm"></i>
