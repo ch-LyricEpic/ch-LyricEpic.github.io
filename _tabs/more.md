@@ -10,4 +10,4 @@ order: 5
 
 放一只河马在这里监工。
 
-<h1>[<i class="fa-solid fa-hippo fa-bounce fa-sm"></i>](https://ch-lyricepic.github.io/fireworks)</h1>
+# [<i class="fa-solid fa-hippo fa-bounce fa-sm"></i>](https://ch-lyricepic.github.io/fireworks)
