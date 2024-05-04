@@ -1,4 +1,64 @@
----
-layout: home
-# Index page
----
+<!DOCTYPE HTML>
+<html>
+<head>
+	<style>
+		.custom-font {
+			font-family: 'Consolas', Consolas;
+		}
+	</style>
+
+	<style>
+		.blur-shadow {
+		  text-shadow: 1px 1px 2px #1f1e33;
+		}
+	</style>
+
+	<title>Lyric | Homepage</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name='description' content='Lyric Homepage'>
+	<meta name='keywords' content='Lyric,Homepage'>
+	<meta name='robots' content='index,follow'>
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<div id="wrapper">
+		<div id="bg"></div>
+		<div id="overlay"></div>
+		<div id="main">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 class="blur-shadow">Hi!!!</h1>
+				<p><span class="custom-font">&nbsp;&bull;&nbsp; 这里是Lyric的个人主页&nbsp;&bull;&nbsp;</span></p>
+				<nav>
+					<ul>
+						<li><a href="https://ch-lyricepic.github.io/blog" target="_blank" class="icon solid fa-blog" title="Lyric's Blog"><span class="label">Lyric的个人博客</span></a></li>
+						<li><a href="https://lyric-necm-upgrade-api.glitch.me/" target="_blank" class="icon solid fa-music" title="Lyric's NECM Upgrade API"><span class="label">Lyric的网易云升级API</span></a></li>
+						<li><a href="https://vex7925x.github.io/" target="_blank" class="icon solid fa-robot" title="7925X 2024"><span class="label">VRCHS 7925X 2024</span></a></li>
+
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<span class="copyright">&copy; 2024 <a href="https://ch-lyricepic.github.io/" target="_blank">Lyric Homepage</a>
+			</footer>
+
+		</div>
+	</div>
+	<script>
+		window.onload = function () { document.body.classList.remove('is-preload'); }
+		window.ontouchmove = function () { return false; }
+		window.onorientationchange = function () { document.body.scrollTop = 0; }
+	</script>
+
+</body>
+
+</html>
