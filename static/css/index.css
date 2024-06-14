@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan','Noto Serif SC','Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f6f8fa;
+    color: #24292e;
+}
+    
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+    
+header {
+    background-color: #0366d6;
+    color: #fff;
+    padding: 20px 0;
+}
+    
+header h1 {
+    font-family: 'Lily Script One';
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+    
+nav ul {
+    list-style-type: none;
+}
+    
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+    
+nav ul li a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+    
+main {
+    padding: 20px 0;
+}
+
+main p {
+    font-size: 20px;
+}
+    
+section {
+    margin-bottom: 30px;
+}
+    
+section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+    
+.repo {
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+    
+.repo h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+    
+.repo p {
+    font-size: 16px;
+    color: #586069;
+}
+
+footer {
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e1e4e8;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative; /* 使内部元素相对于父元素定位 */
+    margin: 15px 0; 
+}
+
+.progress-text {
+    position: absolute;
+    left: 5px; /* 从左侧偏移一些距离 */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff; /* 进度内容文字颜色 */
+}
+
+.progress-percentage {
+    position: absolute;
+    right: 5px; /* 从右侧偏移一些距离 */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000; /* 百分比文字颜色 */
+}
+
+.progress {
+    width: 50%;
+    height: 20px;
+    background-color: #0366d6;
+    position: relative;
+}
+
+/* 弹窗样式 */
+.modal {
+    display: none; /* 默认隐藏 */
+    position: fixed; /* 固定在页面中心 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 水平和垂直居中 */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+    z-index: 9999; /* 确保位于其他内容之上 */
+}
+
+/* 背景遮罩样式 */
+.overlay {
+    display: none; /* 默认隐藏 */
+    position: fixed; /* 固定在页面中心 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* 半透明黑色 */
+    z-index: 9998; /* 确保位于弹窗之下但在其他内容之上 */
+}
+
+/* 显示弹窗时，同时显示背景遮罩 */
+.modal.active, .overlay.active {
+    display: block;
+}
+
+main .button {
+    display: inline;
+    background-color: #0366d6; /* 蓝色背景 */
+    color: white; /* 白色文本 */
+    padding: 10px 20px; /* 内边距 */
+    font-size: 20px; /* 字体大小 */
+    border: none; /* 无边框 */
+    border-radius: 5px; /* 圆角矩形 */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    cursor: pointer; /* 光标样式 */
+    transition: background-color 0.3s, box-shadow 0.3s; /* 过渡效果 */
+    font-family: 'League Spartan', sans-serif;
+    margin: 5px 0;
+}
+
+/* 鼠标悬停效果 */
+main .button:hover {
+    background-color: rgb(19, 108, 197); /* 深蓝色背景 */
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2); /* 加强阴影效果 */
+}
+
+/* 点击效果 */
+main .button:active {
+    background-color: #1054a1; /* 更深的蓝色背景 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 减弱阴影效果 */
+}
+
+#awards {
+    background-color: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.award-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    box-shadow: none;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.award-card h3 {
+    font-size: 20px;
+    color: #0366d6;
+    margin-bottom: 10px;
+}
+
+.award-card p {
+    font-size: 16px;
+    color: #586069;
+    margin-bottom: 5px;
+}
+
+.award-card p:last-child {
+    margin-bottom: 0;
+}
+
+.error p{
+    text-align: center;
+}
